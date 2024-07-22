@@ -1,0 +1,19 @@
+﻿@using MvCv.Models.Entity
+@model List<Sertifikalar>
+
+
+<div class="resume-section-content">
+    <h2 class="mb-5">Sertifikalar</h2>
+    @foreach (var x in Model)
+    {
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="flex-grow-1">
+                <h3 class="mb-0">@x.Tarih</h3>
+                
+                <p> @x.Aciklama.</p>
+            </div>
+           
+        </div>
+    }
+</div>
+
